@@ -14,21 +14,21 @@ _TODO: Elaborate on build process. Cover "special deployment instructions" and "
 
 The Color Wizard app is very simple. Upon opening the app, users are presented with a welcome screen and menu to switch between the two modes of operation mentioned in the introduction to this Readme. A view of this menu is shown here:
 
-_Insert menu img_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/main-menu.png" width="350">
 
 ## Mode 1: Make Colorful Text
 
 There isn't much to this mode of operation; it works almost exactly as described in the introduction. Simply tap on the white text box, labelled "Tap to change color." This will open the keyboard and place a cursor inside the text box if it wasn't there already. 
 
-_default img_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/blank-color-text.png" width="350">
 
 Then, using the on-screen keyboard, begin typing into the text box. Type whatever you want, the app doesn't care. Note that by default the text is boring black-on-white. 
 
-_default txt_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/black-color-text.png" width="350">
 
 To liven up our words, simply tap the "Change Color" button. The text will change to a randomly-generated new color, whose RGB and Hex values are shown below the button.
 
-_colorful txt_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/colorful-color-text.png" width="350">
 
 Users may tap the "Change Color" button as often as they like; the app will continue to generate new colors.
 
@@ -36,22 +36,22 @@ Users may tap the "Change Color" button as often as they like; the app will cont
 
 This mode of operation lets users have a little more fun. It, too, isn't terribly complicated, but provides more creative freedom in that users can choose what to draw and what colors to use. When users select this mode, they are first presented with a blank white canvas and three option buttons, as shown:
 
-_blank canvas_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/blank-canvas.png" width="350">
 
 By default, users can draw on the screen in black ink.
 
-_black canvas_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/black-canvas.png" width="350">
 
 To change colors, users simply click on the "Change Color" button below the canvas. This will bring up a color wheel with infinite options for users to choose from.
 
-_color wheel_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/color-wheel.png" width="350">
 
 Users can select from one of the several colors on the wheel, then adapt that color in any way using the brightness and alpha sliders below the wheel. Once satisfied with their color option, users can tap the "Select" button to go back to the drawing board. Or, if they change their mind about choosing a new color, users can simply hit the phone's back button to return without changing colors. Note users can draw with as many colors as they like on the canvas by choosing new colors.
 
-_colorful canvas_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/colorful-canvas.png" width="350">
 
 To save their creations, users can tap the "Save" button in the bottom left corner. This will save their picture to their phone's internal storage in PNG format. All files are saved to /DCIM/Drawings and are titled with a timestamp, accurate to the second. Users will get a notification once their picture has been saved. (Note that this appears over top of the "Change Color" button.)
 
-_save toast_
+<img src="https://github.com/adamhs1997/ceg4110homework1/raw/master/Screenshots/saving-canvas.png" width="350">
 
 If users want to start from scratch, simply press the "Clear All" button to return to a blank canvas.
