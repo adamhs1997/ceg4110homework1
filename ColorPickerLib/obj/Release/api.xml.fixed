@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<api>
+  <package name="com.flask.colorpicker">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="com.flask.colorpicker.BuildConfig" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.flask.colorpicker&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="11" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;0.0.11&quot;" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.ColorDrawable" extends-generic-aware="android.graphics.drawable.ColorDrawable" final="false" name="CircleColorDrawable" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="CircleColorDrawable" static="false" type="com.flask.colorpicker.CircleColorDrawable" visibility="public"></constructor>
+      <constructor deprecated="not deprecated" final="false" name="CircleColorDrawable" static="false" type="com.flask.colorpicker.CircleColorDrawable" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </constructor>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorCircle" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="ColorCircle" static="false" type="com.flask.colorpicker.ColorCircle" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+        <parameter name="p1" type="float"></parameter>
+        <parameter name="p2" type="float[]"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getColor" native="false" return="int" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getHsv" native="false" return="float[]" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getHsvWithLightness" native="false" return="float[]" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getX" native="false" return="float" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getY" native="false" return="float" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+        <parameter name="p1" type="float"></parameter>
+        <parameter name="p2" type="float[]"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="sqDist" native="false" return="double" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+        <parameter name="p1" type="float"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.preference.Preference" extends-generic-aware="android.preference.Preference" final="false" name="ColorPickerPreference" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="ColorPickerPreference" static="false" type="com.flask.colorpicker.ColorPickerPreference" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+        <parameter name="p2" type="int"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="ColorPickerPreference" static="false" type="com.flask.colorpicker.ColorPickerPreference" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="ColorPickerPreference" static="false" type="com.flask.colorpicker.ColorPickerPreference" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="darken" native="false" return="int" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+        <parameter name="p1" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="alphaSlider" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="colorIndicator" static="false" transient="false" type="android.widget.ImageView" type-generic-aware="android.widget.ImageView" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="density" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="lightSlider" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="selectedColor" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="wheelType" static="false" transient="false" type="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE" type-generic-aware="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE" visibility="protected" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorPickerPreference.1" static="false" visibility="">
+      <implements name="com.flask.colorpicker.builder.ColorPickerClickListener" name-generic-aware="com.flask.colorpicker.builder.ColorPickerClickListener"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.DialogInterface"></parameter>
+        <parameter name="p1" type="int"></parameter>
+        <parameter name="p2" type="java.lang.Integer[]"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="ColorPickerView" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="ColorPickerView" static="false" type="com.flask.colorpicker.ColorPickerView" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+        <parameter name="p2" type="int"></parameter>
+        <parameter name="p3" type="int"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="ColorPickerView" static="false" type="com.flask.colorpicker.ColorPickerView" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+        <parameter name="p2" type="int"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="ColorPickerView" static="false" type="com.flask.colorpicker.ColorPickerView" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="ColorPickerView" static="false" type="com.flask.colorpicker.ColorPickerView" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addOnColorChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.OnColorChangedListener"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addOnColorSelectedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.OnColorSelectedListener"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="callOnColorChangedListeners" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="int"></parameter>
+        <parameter name="p1" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAllColors" native="false" return="java.lang.Integer[]" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSelectedColor" native="false" return="int" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAlphaSlider" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.slider.AlphaSlider"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAlphaValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+        <parameter name="p1" type="boolean"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColorEdit" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.widget.EditText"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColorEditTextColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColorPreview" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.widget.LinearLayout"></parameter>
+        <parameter name="p1" type="java.lang.Integer"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setDensity" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInitialColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+        <parameter name="p1" type="boolean"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInitialColors" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.Integer[]"></parameter>
+        <parameter name="p1" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLightness" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLightnessSlider" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.slider.LightnessSlider"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRenderer" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.renderer.ColorWheelRenderer"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSelectedColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorPickerView.1" static="false" visibility="">
+      <implements name="android.text.TextWatcher" name-generic-aware="android.text.TextWatcher"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="afterTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.text.Editable"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="beforeTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.CharSequence"></parameter>
+        <parameter name="p1" type="int"></parameter>
+        <parameter name="p2" type="int"></parameter>
+        <parameter name="p3" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.CharSequence"></parameter>
+        <parameter name="p1" type="int"></parameter>
+        <parameter name="p2" type="int"></parameter>
+        <parameter name="p3" type="int"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorPickerView.2" static="false" visibility="">
+      <implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.view.View"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.flask.colorpicker.ColorPickerView.WHEEL_TYPE&gt;" final="true" name="ColorPickerView.WHEEL_TYPE" static="true" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="java.lang.String"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE[]" static="true" synchronized="false" visibility="public"></method>
+      <field deprecated="not deprecated" final="true" name="CIRCLE" static="true" transient="false" type="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE" type-generic-aware="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="FLOWER" static="true" transient="false" type="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE" type-generic-aware="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE" visibility="public" volatile="false"></field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="OnColorChangedListener" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onColorChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="OnColorSelectedListener" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onColorSelected" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Utils" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="Utils" static="false" type="com.flask.colorpicker.Utils" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="adjustAlpha" native="false" return="int" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+        <parameter name="p1" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="alphaValueAsInt" native="false" return="int" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="colorAtLightness" native="false" return="int" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+        <parameter name="p1" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAlphaPercent" native="false" return="float" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getHexString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+        <parameter name="p1" type="boolean"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="lightnessOfColor" native="false" return="float" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+    </class>
+  </package>
+  <package name="com.flask.colorpicker.builder">
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ColorPickerClickListener" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.DialogInterface"></parameter>
+        <parameter name="p1" type="int"></parameter>
+        <parameter name="p2" type="java.lang.Integer[]"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorPickerDialogBuilder.1" static="false" visibility="">
+      <implements name="android.content.DialogInterface.OnClickListener" name-generic-aware="android.content.DialogInterface.OnClickListener"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.DialogInterface"></parameter>
+        <parameter name="p1" type="int"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorPickerDialogBuilder.2" static="false" visibility="">
+      <implements name="android.content.DialogInterface.OnClickListener" name-generic-aware="android.content.DialogInterface.OnClickListener"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.content.DialogInterface"></parameter>
+        <parameter name="p1" type="int"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorWheelRendererBuilder" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="ColorWheelRendererBuilder" static="false" type="com.flask.colorpicker.builder.ColorWheelRendererBuilder" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRenderer" native="false" return="com.flask.colorpicker.renderer.ColorWheelRenderer" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.ColorPickerView.WHEEL_TYPE"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorWheelRendererBuilder.1" static="true" visibility="" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PaintBuilder" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="PaintBuilder" static="false" type="com.flask.colorpicker.builder.PaintBuilder" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createAlphaPatternShader" native="false" return="android.graphics.Shader" static="true" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newPaint" native="false" return="com.flask.colorpicker.builder.PaintBuilder.PaintHolder" static="true" synchronized="false" visibility="public"></method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PaintBuilder.1" static="true" visibility="" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PaintBuilder.PaintHolder" static="true" visibility="public">
+      <method abstract="false" deprecated="not deprecated" final="false" name="antiAlias" native="false" return="com.flask.colorpicker.builder.PaintBuilder.PaintHolder" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="boolean"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="build" native="false" return="android.graphics.Paint" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="color" native="false" return="com.flask.colorpicker.builder.PaintBuilder.PaintHolder" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="mode" native="false" return="com.flask.colorpicker.builder.PaintBuilder.PaintHolder" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.graphics.PorterDuff.Mode"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="shader" native="false" return="com.flask.colorpicker.builder.PaintBuilder.PaintHolder" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.graphics.Shader"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="stroke" native="false" return="com.flask.colorpicker.builder.PaintBuilder.PaintHolder" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="style" native="false" return="com.flask.colorpicker.builder.PaintBuilder.PaintHolder" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.graphics.Paint.Style"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="xPerMode" native="false" return="com.flask.colorpicker.builder.PaintBuilder.PaintHolder" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="android.graphics.PorterDuff.Mode"></parameter>
+      </method>
+    </class>
+  </package>
+  <package name="com.flask.colorpicker.renderer">
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AbsColorWheelRenderer" static="false" visibility="public">
+      <implements name="com.flask.colorpicker.renderer.ColorWheelRenderer" name-generic-aware="com.flask.colorpicker.renderer.ColorWheelRenderer"></implements>
+      <constructor deprecated="not deprecated" final="false" name="AbsColorWheelRenderer" static="false" type="com.flask.colorpicker.renderer.AbsColorWheelRenderer" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="calcTotalCount" native="false" return="int" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="float"></parameter>
+        <parameter name="p1" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAlphaValueAsInt" native="false" return="int" static="false" synchronized="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getColorCircleList" native="false" return="java.util.List&lt;com.flask.colorpicker.ColorCircle&gt;" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRenderOption" native="false" return="com.flask.colorpicker.renderer.ColorWheelRenderOption" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="initWith" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.renderer.ColorWheelRenderOption"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="colorCircleList" static="false" transient="false" type="java.util.List" type-generic-aware="java.util.List&lt;com.flask.colorpicker.ColorCircle&gt;" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="colorWheelRenderOption" static="false" transient="false" type="com.flask.colorpicker.renderer.ColorWheelRenderOption" type-generic-aware="com.flask.colorpicker.renderer.ColorWheelRenderOption" visibility="protected" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ColorWheelRenderOption" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="ColorWheelRenderOption" static="false" type="com.flask.colorpicker.renderer.ColorWheelRenderOption" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="false" name="alpha" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="cSize" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="density" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="lightness" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="maxRadius" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="strokeWidth" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="targetCanvas" static="false" transient="false" type="android.graphics.Canvas" type-generic-aware="android.graphics.Canvas" visibility="public" volatile="false"></field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ColorWheelRenderer" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getColorCircleList" native="false" return="java.util.List&lt;com.flask.colorpicker.ColorCircle&gt;" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getRenderOption" native="false" return="com.flask.colorpicker.renderer.ColorWheelRenderOption" static="false" synchronized="false" visibility="public"></method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="initWith" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.renderer.ColorWheelRenderOption"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="GAP_PERCENTAGE" static="true" transient="false" type="float" type-generic-aware="float" value="0.025000" visibility="public" volatile="false"></field>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="com.flask.colorpicker.renderer.AbsColorWheelRenderer" extends-generic-aware="com.flask.colorpicker.renderer.AbsColorWheelRenderer" final="false" name="FlowerColorWheelRenderer" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="FlowerColorWheelRenderer" static="false" type="com.flask.colorpicker.renderer.FlowerColorWheelRenderer" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public"></method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.flask.colorpicker.renderer.AbsColorWheelRenderer" extends-generic-aware="com.flask.colorpicker.renderer.AbsColorWheelRenderer" final="false" name="SimpleColorWheelRenderer" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="SimpleColorWheelRenderer" static="false" type="com.flask.colorpicker.renderer.SimpleColorWheelRenderer" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public"></method>
+    </class>
+  </package>
+  <package name="com.flask.colorpicker.slider">
+    <class abstract="true" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="AbsCustomSlider" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="AbsCustomSlider" static="false" type="com.flask.colorpicker.slider.AbsCustomSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+        <parameter name="p2" type="int"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="AbsCustomSlider" static="false" type="com.flask.colorpicker.slider.AbsCustomSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="AbsCustomSlider" static="false" type="com.flask.colorpicker.slider.AbsCustomSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="createBitmaps" native="false" return="void" static="false" synchronized="false" visibility="protected"></method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="drawBar" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.graphics.Canvas"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="drawHandle" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.graphics.Canvas"></parameter>
+        <parameter name="p1" type="float"></parameter>
+        <parameter name="p2" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDimension" native="false" return="int" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onValueChanged" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnValueChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.slider.OnValueChangedListener"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="updateBar" native="false" return="void" static="false" synchronized="false" visibility="protected"></method>
+      <field deprecated="not deprecated" final="false" name="bar" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="barCanvas" static="false" transient="false" type="android.graphics.Canvas" type-generic-aware="android.graphics.Canvas" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="barHeight" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="barOffsetX" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="bitmap" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="bitmapCanvas" static="false" transient="false" type="android.graphics.Canvas" type-generic-aware="android.graphics.Canvas" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="handleRadius" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="onValueChangedListener" static="false" transient="false" type="com.flask.colorpicker.slider.OnValueChangedListener" type-generic-aware="com.flask.colorpicker.slider.OnValueChangedListener" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="value" static="false" transient="false" type="float" type-generic-aware="float" visibility="protected" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.flask.colorpicker.slider.AbsCustomSlider" extends-generic-aware="com.flask.colorpicker.slider.AbsCustomSlider" final="false" name="AlphaSlider" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="AlphaSlider" static="false" type="com.flask.colorpicker.slider.AlphaSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+        <parameter name="p2" type="int"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="AlphaSlider" static="false" type="com.flask.colorpicker.slider.AlphaSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="AlphaSlider" static="false" type="com.flask.colorpicker.slider.AlphaSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="drawBar" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.graphics.Canvas"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="drawHandle" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.graphics.Canvas"></parameter>
+        <parameter name="p1" type="float"></parameter>
+        <parameter name="p2" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onValueChanged" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColorPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.ColorPickerView"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="color" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.flask.colorpicker.slider.AbsCustomSlider" extends-generic-aware="com.flask.colorpicker.slider.AbsCustomSlider" final="false" name="LightnessSlider" static="false" visibility="public">
+      <constructor deprecated="not deprecated" final="false" name="LightnessSlider" static="false" type="com.flask.colorpicker.slider.LightnessSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+        <parameter name="p2" type="int"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="LightnessSlider" static="false" type="com.flask.colorpicker.slider.LightnessSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+        <parameter name="p1" type="android.util.AttributeSet"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="LightnessSlider" static="false" type="com.flask.colorpicker.slider.LightnessSlider" visibility="public">
+        <parameter name="p0" type="android.content.Context"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="drawBar" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.graphics.Canvas"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="drawHandle" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="android.graphics.Canvas"></parameter>
+        <parameter name="p1" type="float"></parameter>
+        <parameter name="p2" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onValueChanged" native="false" return="void" static="false" synchronized="false" visibility="protected">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="int"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColorPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="com.flask.colorpicker.ColorPickerView"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="OnValueChangedListener" static="false" visibility="public">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onValueChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+        <parameter name="p0" type="float"></parameter>
+      </method>
+    </interface>
+  </package>
+</api>
