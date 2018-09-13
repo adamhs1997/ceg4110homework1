@@ -8,7 +8,7 @@ This app is a sort of "Color Wizard" with two main modes of operation. In one mo
 
 # Running this app on your phone
 
-To run this app on your phone, simply download and load the Homework1.apk file (located in the Homework1/bin folder in this repo) onto your phone. _No external resources/files are needed to run the app on your device._ After downloading the apk onto your computer, connect your phone to it with a USB cable. You may have to enable file sharing on your phone to be able to access its file system on your computer. Then, simply move the apk anywhere onto your phone's storage and, from your phone's file explorer, run the apk. Follow the prompts to install the app (you may have to allow your phone to install from untrusted sources). Once the installer is done, open the app and enjoy!
+To run this app on your phone, simply download and load the Homework1.apk file onto your phone. _No external resources/files are needed to run the app on your device._ After downloading the apk onto your computer, connect your phone to it with a USB cable. You may have to enable file sharing on your phone to be able to access its file system on your computer. Then, simply move the apk anywhere onto your phone's storage and, from your phone's file explorer, run the apk. Follow the prompts to install the app (you may have to allow your phone to install from untrusted sources). Once the installer is done, open the app and enjoy!
 
 # How to use this app
 
